@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import { BiCategoryAlt, BiSearchAlt } from 'react-icons/bi';
 import { VscSymbolKeyword } from 'react-icons/vsc';
 import { useHomePageStore } from '../../zustand/store/homepage';
 import { useTranslation } from 'react-i18next';
@@ -12,9 +13,12 @@ import {
   ContentContainer,
   CustomCol, 
   CustomH4, 
+  CustomFormSelect, 
   CustomLabel,
   CustomButton,
   FormControl,
+  CustomImage,
+  CustomImageStory,
   CustomH1
 } from './components'
 

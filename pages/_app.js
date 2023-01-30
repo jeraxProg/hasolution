@@ -2,9 +2,8 @@ import '../styles/globals.css'
 import "../styles/nprogress.css";
 import nProgress from "nprogress";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { ChakraProvider } from '@chakra-ui/react'
-// import { ThemeProvider } from 'styled-components';
-// import theme from '../styles/theme';
+import { ThemeProvider } from 'styled-components';
+import theme from '../styles/theme';
 import Router from "next/router";
 
 Router.events.on("routeChangeStart", nProgress.start);
@@ -14,11 +13,10 @@ Router.events.on("routeChangeComplete", nProgress.done);
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <ThemeProvider theme={theme}> */}
-        {/* <ChakraProvider> */}
+      <ThemeProvider theme={theme}>
+
           <Component {...pageProps} />
-        {/* </ChakraProvider> */}
-      {/* </ThemeProvider> */}
+      </ThemeProvider>
     </>
   )
 }
