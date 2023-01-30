@@ -13,6 +13,7 @@ const NoResults = () => {
             width={500}
             height={500}
             quality={100}
+            priority={true}
             className="mx-auto"
         />
         <CustomDesc className="d-flex justify-content-center">No Results Found!</CustomDesc>
