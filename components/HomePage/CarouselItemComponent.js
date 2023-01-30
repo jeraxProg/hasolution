@@ -1,6 +1,4 @@
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";

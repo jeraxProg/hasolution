@@ -1,18 +1,17 @@
 // import { useColorMode, Switch, Flex, IconButton } from '@chakra-ui/react'
 // import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import NextLink from 'next/link';
-import Button from 'react-bootstrap/Button';
+
+
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
 import {useRouter} from 'next/router';
 import {CustomContainer, CustomNav} from './components';
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
-import { searchEmployers } from '../../utils/client/employers';
 import { CustomH1 } from '../HomePage/components';
 
 
