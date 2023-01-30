@@ -100,7 +100,6 @@ export const CustomButton = styled(Button) `
     min-width: 122px;
     padding-left: 34px;
     padding-right: 15px;
-    background-image: url(/_next/static/media/search-icon.ad1e8376.svg);
     background-repeat: no-repeat;
     background-position: left 19px top 18px;
     color: #fff;

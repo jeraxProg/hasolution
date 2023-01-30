@@ -78,15 +78,6 @@ const BrowseByCategory = ({cat_list, cat_length}) => {
                 <WeAreHiring>
                     <Row>
                         <Col lg={2} xs={12} className="d-flex align-items-center justify-content-center mb-3 mb-lg-0 d-none d-lg-block">
-                            <Image
-                                // loader={myLoader}
-                                src="/images/home-page/Hiring-rafiki.svg"
-                                alt=""
-                                width={200}
-                                height={200}
-                                quality={100}
-                                style={{width: '100%'}}
-                            />
                         </Col>
                         <Col lg={3} xs={12} className="d-flex align-items-center justify-content-center mb-3 mb-lg-5">
                             <BannerTitleContainer>
@@ -101,15 +92,7 @@ const BrowseByCategory = ({cat_list, cat_length}) => {
                             <BrowseCategoryApplyButton onClick={() => router.push("/careers")}><BsPatchCheck />{translate('applynow')}</BrowseCategoryApplyButton>
                         </Col>
                         <Col lg={2} xs={12} className="d-flex align-items-center justify-content-center mb-3 mb-lg-0 d-none d-lg-block">
-                            <Image
-                                // loader={myLoader}
-                                src="/images/home-page/Job_hunt-rafiki.svg"
-                                alt=""
-                                width={200}
-                                height={200}
-                                quality={100}
-                                style={{width: '100%'}}
-                            />
+                        
                         </Col>
                     </Row>
                 </WeAreHiring>

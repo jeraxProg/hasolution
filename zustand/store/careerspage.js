@@ -1,8 +1,8 @@
 import create from 'zustand';
-import router from 'next/router';
-import { searchEmployers } from '../../utils/client/employers';
-import baseUrl from '../../utils/baseUrl'
-import axios from 'axios'
+// import router from 'next/router';
+// import { searchEmployers } from '../../utils/client/employers';
+// import baseUrl from '../../utils/baseUrl'
+// import axios from 'axios'
 
 
 export const useCareersPageStore = create((set, get) => ({
