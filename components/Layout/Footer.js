@@ -65,8 +65,8 @@ const Footer = () => {
                     <Items>
                         Language:
                         <CustomFormSelect size="sm" name="language" onChange={(e) => onChangeTranslate(e)} value={language}>
-                            <option value="ja">Japanese</option>
                             <option value="en">English</option>
+                            <option value="ja">Japanese</option>
                         </CustomFormSelect>
                     </Items>
                 </ItemsContainer>
