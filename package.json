@@ -1,0 +1,44 @@
+{
+  "name": "job-portal-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "express": "^4.18.2",
+    "framer-motion": "^7.6.12",
+    "html-react-parser": "^3.0.4",
+    "i18next": "^22.4.6",
+    "moment": "^2.29.4",
+    "mongoose": "^6.7.3",
+    "next": "^13.1.1",
+    "next-i18next": "^13.0.2",
+    "nprogress": "^0.2.0",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.1.1",
+    "react-icons": "^4.7.1",
+    "react-multi-carousel": "^2.8.2",
+    "react-paginate": "^8.1.4",
+    "react-reveal": "^1.2.2",
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5",
+    "zustand": "^4.1.4"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7"
+  }
+}
