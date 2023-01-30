@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import "../styles/nprogress.css";
 import nProgress from "nprogress";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ChakraProvider } from '@chakra-ui/react'
+// import { ChakraProvider } from '@chakra-ui/react'
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import Router from "next/router";
@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <ChakraProvider>
+        {/* <ChakraProvider> */}
           <Component {...pageProps} />
-        </ChakraProvider>
+        {/* </ChakraProvider> */}
       </ThemeProvider>
     </>
   )

@@ -1,4 +1,4 @@
-import { useColorMode, Switch, Flex, IconButton } from '@chakra-ui/react'
+// import { useColorMode, Switch, Flex, IconButton } from '@chakra-ui/react'
 // import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link';
 import Button from 'react-bootstrap/Button';
@@ -19,8 +19,8 @@ import { CustomH1 } from '../HomePage/components';
 const NavbarComponent = () => {
   const router = useRouter()
   const {t: translate} = useTranslation();
-  const {colorMode, toggleColorMode} = useColorMode()
-  const isDark = colorMode === 'dark'
+  // const {colorMode, toggleColorMode} = useColorMode()
+  // const isDark = colorMode === 'dark'
 
   const [show, setShow] = useState(false)
   const controlNavbar = () => {

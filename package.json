@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "axios": "^1.2.0",
@@ -33,7 +32,6 @@
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
     "react-paginate": "^8.1.4",
-    "react-reveal": "^1.2.2",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.5",
     "zustand": "^4.1.4"
