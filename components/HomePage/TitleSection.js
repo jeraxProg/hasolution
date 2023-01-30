@@ -28,7 +28,7 @@ const Homepage = ({cat_list, employers}) => {
   const { industry, location, keyword } = details;
   const { t:translate } = useTranslation();
 
-  // const filteredCategory = cat_list.filter((item) => item.isShown === true)
+  const filteredCategory = cat_list.filter((item) => item.isShown === true)
 
   return (
       <CustomContainer fluid>
