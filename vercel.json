@@ -1,5 +1,7 @@
 {
     "version": 2,
+    "source": "/feedback/((?!general).*)",
+    "destination": "/api/feedback/general",
     "builds": [
       {
         "src": "server.js",
