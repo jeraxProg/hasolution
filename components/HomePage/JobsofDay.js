@@ -16,19 +16,18 @@ import {
 } from './components'
 
 const JobsofDay = ({employers, cat_list}) => {
+  const { t:translate } = useTranslation();
 
   const {isSelected,
     setIsSelected} = useHooks();
 
-  const { t:translate } = useTranslation();
-  let filterEmployers = employers.filter((employer) => employer.cat_of_industry === isSelected)
+  let filterEmployers = (employers || []).filter((employer) => employer.cat_of_industry === isSelected)
 
 
   return (
     <JODContainer className="mt-5">
          <TitleContainer>
             <Title className="mb-10">{translate('jobsoftheday')}</Title>
-            {/* <Subtitle>Aliquip ullamco duis incididunt ea nulla consectetur cillum eu eiusmod dolore cupidatat nulla do in.</Subtitle> */}
         </TitleContainer>
         <JOBBodyContainer>
           <Row className="d-flex justify-content-center">
@@ -50,66 +49,7 @@ const JobsofDay = ({employers, cat_list}) => {
                   </CustomJobCatButton>
                 )
               }))}
-              {/* <CustomJobCatButton variant="outline-primary">
-                <Image
-                    src="/images/home-page/management.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    quality={100}
-                />
-                Management
-              </CustomJobCatButton> */}
-              {/* <CustomJobCatButton variant="outline-primary">
-                <Image
-                    src="/images/home-page/marketing.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    quality={100}
-                />
-                Marketing & Sale
-              </CustomJobCatButton>
-              <CustomJobCatButton variant="outline-primary">
-                <Image
-                    src="/images/home-page/finance.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    quality={100}
-                />
-                Finance
-              </CustomJobCatButton>
-              <CustomJobCatButton variant="outline-primary">
-                <Image
-                    src="/images/home-page/human.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    quality={100}
-                />
-                Human Resource
-              </CustomJobCatButton>
-              <CustomJobCatButton variant="outline-primary">
-                <Image
-                    src="/images/home-page/retail.svg"
-                    alt=""
-                    width={18}
-                    height={18}
-                    quality={100}
-                />
-                Retails & Products
-              </CustomJobCatButton>
-              <CustomJobCatButton variant="outline-primary">
-                  <Image
-                      src="/images/home-page/content.svg"
-                      alt=""
-                      width={18}
-                      height={18}
-                      quality={100}
-                  />
-                Content Writer
-              </CustomJobCatButton> */}
+    
           </Row>
           <Row className="mt-5">
             {!employers ? 
